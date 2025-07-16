@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .box{
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px /*4군데 */
+            
+            /* margin: 10px 20px 30px 40px; 위 오른 아래 왼 시계방향*/
+            /* margin: 10px auto 30px 위 좌우 아래 */
+            /* margin: 10px 20px 위아래 좌우 */
+            }
+            a{
+                /* width: 100px 적용안됨 */
+                /* height: 100px 적용안됨 */
+                border: 1px solid black;
+                margin: top 100px;
+            }
+            input{
+                width: 300px;
+                height: 300px;
+                margin: 30px;
+            }
+    </style>
+<body>
+    <h2>박스모델이란</h2>
+    <p>태그는 브라우저에서 박스(box)형태로 표현된다</p>
+    <p>콘텐츠영역, 패딩(padding), 보더(border), 마진(margin)으로 구성됨</p>
+    <div class="box">html 수업시간이다</div>
+    <a href="https://naver.com"target="_blank">hyper text 링크 여기를 누르시오</a>
+    <a href="https://naver.com"target="_blank">hyper text 링크 여기를 누르시오</a>
+    <br>
+    <input type="text">
+</body>
+</html>

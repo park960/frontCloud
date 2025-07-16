@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .wrap{
+            width: 500px;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: ;
+        }
+        .info{
+            width: 85%;
+            margin: 0 auto;
+        }
+              span{
+                    font-size: 25px; 
+                    color:red;
+            } 
+            .order-wrap{
+                width: 85%;
+                /* border: 1px solid black; */
+            margin:  auto;
+            }
+            .order-wrap input{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 10px;
+            }
+            .order-wrap select{
+                box-sizing: border-box;
+                width: 100%;
+                padding: 10px;
+            }
+            .img{
+                background-image: url(http://www.iyctv.net/photo/12075/b2053a2d-2951-4eb9-9866-209746f30831.jpg);
+                background-position: center;
+                background-size: cover;
+                width: 500px;
+                height: 200px;
+                margin: 0 auto;
+            }
+    </style>
+<body>
+    <div class="wrap">
+        <!--상품정보 영역-->
+        <div class="img">
+
+        </div>
+        <div class="good-info"></div>
+         <!--상품이미지-->
+        <div class="img"></div>
+         <!--상품정보--> 
+        <div class="info">   
+            <h1>대관령 황태</h1>
+            <p>겨울 내내 녹았다 얼었다를 반복한 맛 좋은 대관령 황태입니다.</p>
+            <p>가격 : 30000원 <span>10</span> 마리</p>
+        </div>
+         <!--주문영역-->
+         <div class="order-wrap">
+            <div> 주문내역</div>
+                <div> 주문자 이름   <input type="text"></div>
+            <div>수량</div>
+            
+            <select>
+               <option value="">수량을 선택해주세요</option>
+               <option value="10">10마리 3만원</option>
+               <option value="20">20마리 6만원</option>
+               <option value="30">30마리 9만원</option>
+               <option value="40">40마리 12만원</option>
+               <option value="50">50마리 15만원</option> 
+            </select>
+            <div>주문금액</div>
+            <input type="text">
+            <div>전화번호</div>
+            <input type="text" placeholder="전화번호를 입력해주세요">
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

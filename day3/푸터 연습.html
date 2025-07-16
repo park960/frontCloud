@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #4b4b4b;
+            box-sizing: border-box;
+            
+        
+        }
+        .wrap{
+            width: 1400px;
+            height: 430px;
+            box-sizing: border-box;
+            padding: 100px 150px ; 
+            margin: 0 auto  ;
+        }
+        .item1{
+
+            width: auto;
+            height: auto;
+            display: flex; 
+            box-sizing: border-box;
+            align-items: end;
+            border-bottom: 0.8px solid #22222262;
+            padding-bottom: 5px;
+            
+            
+        }
+        .item2{
+            width: auto;
+            height: 70%;  
+            display: flex; 
+            box-sizing: border-box;
+            margin-top: 0;
+            margin: 0;
+            padding-top: 5px;
+            border-bottom: 0.8px solid #22222262;
+            padding-bottom: 5px;
+        }
+        .item3{
+            width: auto;
+            height: 10%;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .menu1{
+            text-decoration: none;
+            color: #000;
+            width: 20%;
+            box-sizing: border-box;
+        }
+        .menu2{
+            text-decoration: none;
+            color: #000;
+            width: 10%;
+            box-sizing: border-box;
+        }
+        .menu3{
+            text-decoration: none;
+            color: #000;
+            width: 40%;
+            box-sizing: border-box;
+        }
+        .menu4{
+            text-decoration: none;
+            color: #000;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        a{
+            text-decoration: none;
+            color: #dbdbdba1;
+            font-size: 14px;
+            
+        }
+        p{
+            color: #dbdbdba1;
+            font-size: 12px;
+            margin: 0;
+          
+            padding:0 0 10px 0;
+            
+        }
+        .point{
+            font-size: 14px;
+            font-weight:700;
+                
+        }
+        .sns1{
+            /* display:  */
+            box-sizing: border-box;
+        }
+        .logo{ 
+            width: 20%;
+            /* border-radius: 40%; */
+            box-sizing: border-box;
+            
+        }
+        .logo-img{
+            background-image: url(https://avatars.githubusercontent.com/u/77609571?s=280&v=4);
+            width: 70px;
+            height: 70px;
+            margin-left: -2px;
+            border-radius: 10%;
+            background-position: center;
+            background-size: cover;
+            /* border: 1px solid black; */
+
+        }
+        .text{
+            width: 80%;
+            text-align: right;
+            box-sizing: border-box;
+            color: #dbdbdba1;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .sns{
+            display: flex;
+            
+            justify-content: flex-end; /* 오른쪽 정렬 */
+            gap: 4px;
+        }
+
+
+        .sns1{
+            
+            width: 25px;
+            height: 25px;
+            background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9APJ8%2FbtrTMQYizgY%2FAAAAAAAAAAAAAAAAAAAAAMDU-nTbedbwbMDIwIuRgNHUUoKSmmW49PaXIHxw6V2C%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3D0r%252Fjl43I1JShDyEtDbljwGcSj54%253D);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .sns2{
+            
+            width: 25px;
+            height: 25px;
+            background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9APJ8%2FbtrTMQYizgY%2FAAAAAAAAAAAAAAAAAAAAAMDU-nTbedbwbMDIwIuRgNHUUoKSmmW49PaXIHxw6V2C%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3D0r%252Fjl43I1JShDyEtDbljwGcSj54%253D);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .sns3{
+            
+            width: 25px;
+            height: 25px;
+            background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9APJ8%2FbtrTMQYizgY%2FAAAAAAAAAAAAAAAAAAAAAMDU-nTbedbwbMDIwIuRgNHUUoKSmmW49PaXIHxw6V2C%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3D0r%252Fjl43I1JShDyEtDbljwGcSj54%253D);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .sns4{
+            
+            width: 25px;
+            height: 25px;
+            background-image: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb9APJ8%2FbtrTMQYizgY%2FAAAAAAAAAAAAAAAAAAAAAMDU-nTbedbwbMDIwIuRgNHUUoKSmmW49PaXIHxw6V2C%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3D0r%252Fjl43I1JShDyEtDbljwGcSj54%253D);
+            background-position: center;
+            background-size: cover;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="wrap">
+        <!--1섹션-->
+        <div class="item1">
+            <div class="logo">
+                <div class="logo-img"></div>
+            </div>
+            <div class="text"> 반갑습니다 에이콘입니다.</div>
+        </div>
+        
+        <!--2섹션-->
+        <div class="item2">
+            <div class="menu1">
+                <a class="point" href="">회사소개</a><br>
+                <a href="">menu2</a><br>
+                <a href="">menu3</a><br>
+                <a href="">menu4</a>
+            </div>
+            <div class="menu2">
+                <a class="point" href="">상품소개</a><br>
+                <a href="">menu2</a><br>
+                <a href="">menu3</a><br>
+            </div>
+            <div class="menu3">
+                <p class="point">안녕하세요 반갑습니다</p>
+                <p>대한민국 최적의 R&D교육센터 | 연구개발이 병행되는 교육 에이콘아카데미</p>
+                <p>(주)HBI기술연구소 에이콘아카데미 | 대표: 성 영 한 | 사업자등록번호:101-86-89995 | 통신판매업신고증 : 제 2022-서울마포-1597호 | TEL: 02-2231-6412</p>
+                <p>서울특별시 마포구 양화로 122 LAB7 빌딩 3층, 4층</p>
+            </div>
+            <div class="menu4">
+                <div class="sns">
+                    <div class="sns1"></div>
+                    <div class="sns2"></div>
+                    <div class="sns3"></div>
+                    <div class="sns4"></div>
+                </div>
+                <div class="text2">
+                    <div class="text2-2">
+                        <p>반갑습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--3섹션-->
+        <div class="item3">
+            <p style="font-size: 12px;color: #acacac;">COPYRIGHT(C) HBILAB. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
