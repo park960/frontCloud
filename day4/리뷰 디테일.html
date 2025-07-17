@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .review{
+            margin: 0 auto;
+            width: 1200px;
+            height: auto;
+            border: 1px solid black;
+        }
+        /* 섹션1 */
+        .section1{
+            text-align: center;
+            border: 1px solid black;
+            height: 50px;
+            padding-bottom: 30px;
+
+        }
+        /* 섹션2 */
+        .section2{
+            border: 1px solid black;
+            height: 400px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            padding: 0;
+
+        }
+        .image{
+            text-align: center;
+            width: 50%;
+            height: auto;
+        }
+        .textarea{
+            text-align: center;
+            width: 50%;
+            height: auto;
+        }
+        /* 섹션3 */
+        .section3{
+            border: 1px solid black;
+            
+            
+            
+        }
+        .select{
+           padding-top: 30px;
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+            height: 200px;
+            justify-content: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .select1{
+            
+            width: 30%;
+        }
+        select{
+            width: 80%;
+        } 
+        
+        .select2{
+            
+            width: 30%;
+        }
+        .select3{
+            
+            width: 30%;
+        }
+        /* 섹션4 */
+        .section4{
+            border: 1px solid black;
+            height: 300px;
+            padding-left: 100px;
+            padding-right: 100px;
+            
+        }
+        /* 섹션5 */
+        .section5{
+            border: 1px solid black;
+            height: 300px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .notion{
+            width: 99%;
+            height: 200px;
+        }
+        .realreview{
+            width: 60%;
+            height: 50%;
+        }
+        .image1{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="review">
+        <div class="section1">
+            <h2>REVIEW DETAIL</h2>
+        </div>
+        <div class="section2">
+            <div class="image">
+                <h2>이미지</h2>
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fzz9fH%2FbtsOkR2dG1r%2FAAAAAAAAAAAAAAAAAAAAAJbpDNzX816RRu_ylhSO4ugmVEskdfhqU4bO_wgkY8d6%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1753973999%26allow_ip%3D%26allow_referer%3D%26signature%3DXELv2GfQcKYBV8teDkPfOKei5po%253D" alt="" class="image1">
+            </div>
+            <div class="textarea">
+                <h2>맛평가(후기)</h2>
+                <textarea class="realreview" cols="30" rows="10" placeholder="후기를 작성해주세요"></textarea> 
+            </div>
+        </div>
+        <div class="section3">
+            <div class="select">
+                <div class="select1">
+                    <h3>연령대</h3>
+                    <select>
+                        <option>10대</option>
+                        <option>20대</option>
+                        <option>30대</option>
+                        <option>40대</option>
+                        <option>50대</option>
+                        <option>60대</option>
+                    </select>
+                </div>
+                <div class="select2">
+                    <h3>만족도</h3>
+                    <label><input type="radio" value="불만족" name="review">다시또옴</label>
+                    <label><input type="radio" value="불만족" name="review">기억은날듯</label><br>
+                    <label><input type="radio" value="불만족" name="review">그냥보통</label>
+                    <label><input type="radio" value="불만족" name="review">안올듯</label>
+                    <label><input type="radio" value="만족" name="review">화가남</label>
+                </div>
+                <div class="select3">
+                    <h3>성별</h3>
+                    <label><input type="radio" value="남자" name="gender">남성</label>
+                    <label><input type="radio" value="여자" name="gender">여성</label>
+                </div>
+            </div>
+        </div>
+        <div class="section4">
+            <h3>판매자정보</h3>
+            <textarea class="notion" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+        </div>
+        <div class="section5">
+            <h3>더 나누고 싶은 정보</h3>
+            <textarea class="notion" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+        </div>
+
+    </div>
+</body>
+</html>

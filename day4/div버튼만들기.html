@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            width: 300px;
+            height: 60px;
+            border: 1px solid black;
+            line-height: 60px;
+            text-align: center;
+            position: relative;
+        }
+        /* 마우스 호버 */
+        .btn:hover{
+            background-color: azure;
+        }
+        .icon{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+
+            background-image: url(https://download-hub.com/wp-content/uploads/2021/01/Facebook_icon.png);
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+        button{
+            width: 200px;
+            height: 60px;
+            border-radius: 24px;
+            border: none;
+            
+        } 
+        
+        button:hover{
+            background-color: black;
+            color: white;
+           
+        }
+         button:active{
+            background-color: rgb(161, 24, 24);
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <span class="icon"></span>
+        로그인
+    </div>
+    <button>
+        <div class="btn-icon"></div>
+        <p>확인하기</p>
+    </button>
+</body>
+</html>
