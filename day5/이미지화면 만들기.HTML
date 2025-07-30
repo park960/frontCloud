@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery-wrap{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+        }
+        .board{
+            width: 500px;
+            height: 500px;
+            background-color: black; /*여기엔 이미지 넣기*/
+            background-image: url();     /* <= 이렇게 */
+            background-position: center;
+            background-size: cover;
+        }
+        .button1{
+            width: 30px;
+            height: 60px;
+            background-color: blue;
+            position: absolute;   /*요소들끼리 겹쳐지고 싶을땐 엡솔사용*/
+            top: 225px;
+            left: -15px;
+            border-radius: 10px 0px 0px 10px ;
+        }
+        .button2{
+            width: 30px;
+            height: 60px;
+            background-color: red;
+            position: absolute;
+            top: 225px;
+            right: -15px;
+            border-radius: 0px 10px 10px 0px ;
+        }
+    </style>
+</head>
+<body>
+    <!--갤러리 만들기-->
+    <div class="gallery-wrap">
+        <!--이미지 영역-->
+        <div class="board"></div>
+
+        <div class="button1"></div>
+        <div class="button2"></div>
+    </div>
+</body>
+</html>

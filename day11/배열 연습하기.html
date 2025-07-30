@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let scoreMonth7 = [
+            [1, 13, 21, 25, 28, 31], //0행
+            [8, 10, 14, 20, 33, 41], //1행
+            [6, 12, 18, 37, 40, 41]  //2행
+        ];
+
+        let scoreMonth6 = [
+            [1, 13, 21, 25, 28, 31], //0행
+            [8, 10, 14, 20, 33, 41], //1행
+            [6, 12, 18, 37, 40, 41]  //2행
+        ];
+
+
+        let scoreYear = [ scoreMonth7, scoreMonth6 ];
+        //     //0면
+        //     [ //0열
+        //         [1, 13, 21, 25, 28, 31], //0행  1182
+        //         [8, 10, 14, 20, 33, 41], //1행  1181
+        //         [6, 12, 18, 37, 40, 41]  //2행  1180
+        //     ],
+
+        //     //1면
+        //    [ //1열
+        //         [1, 13, 21, 25, 28, 31], //0행
+        //         [8, 10, 14, 20, 33, 41], //1행
+        //         [6, 12, 18, 37, 40, 41]  //2행
+        //     ]
+
+        
+        let result ="";
+        // 행 열 면
+        function scoreYear(i,k,p){
+            for (let i = 0; i < 3; i++) {//행
+                for(let j=0; j<2; j++) {
+                    for( let p=0; p<2;p++){
+                        result = scoreYear[P][J][I];
+                        console.log(result);
+                    }
+                }
+            }
+        }
+
+
+        
+    </script>
+</body>
+
+</html>

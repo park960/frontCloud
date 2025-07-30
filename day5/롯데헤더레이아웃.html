@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            border:  1px solid black;
+            height: 200px;
+            display: flex;
+            
+        }
+        .header > div{
+            width: 33.3%;
+            border:  1px solid black;
+            height: 200px;
+            position: relative;
+        }
+        .title-wrap{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .search-wrap{
+
+        }
+        /* 검색바 */
+        .search{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+        }
+        input[type=text]{
+            width: 400px;
+            height: 40px;
+            border-radius:  10px 0px 0px 10px;
+            border: 0.1px solid #ccc;
+        }
+        button{
+            width: 50px;
+            height: 43px;
+            border-radius: 0px 10px 10px 0px ;
+            border: 0.1px solid #ccc;
+            margin: 0;
+        }
+        .menu-wrap{
+
+        }
+        .menu{
+            border:  1px solid black;
+            display: flex;
+            position: absolute;
+            right: 0;;
+            top: 30;
+            font-size: 12px;
+        }
+        .menu li {
+            padding-right: 0px;
+        }
+        span{
+            display: block;
+        }
+        .menu li img{
+            margin-left: 5px;
+        }
+        /* menu css */
+        .menu-wrap{
+            position: relative;
+        }
+        .menu{
+            position: absolute;
+            right: 0;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!--title-->
+        <div class="title-wrap">
+            <img src="./lotte.gif" alt="타이틀 이미지">
+        </div>
+        <!--search-->
+        <div class="search-wrap">
+            <div class="search">
+                <input type="text">
+                <button>조회</button>
+            </div>
+        </div>
+       <!--menu-->
+        <div class="menu-wrap">
+            <ul>
+                <li><img src="./1.png"><span>로그인</span></li>
+                <li><img src="./1.png"><span>로그인</span></li>
+                <li><img src="./1.png"><span>로그인</span></li>
+            </ul>
+        </div>        
+    </div>
+</body>
+</html>

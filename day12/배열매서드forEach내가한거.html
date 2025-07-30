@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function myforEach( callback){  //callback => 매개변수의 이름은 아무 상관없음
+            let 이름=["윤태민","최정문","이동규","김서호"];
+           
+            for(let i=0; i<이름.length; i++){
+            let item = 이름[i];
+            console.log(item);
+            callback(item);
+            }    
+        }
+        
+
+        myforEach(function(value){
+            alert(value);
+        });
+        // 익명함수로 전달
+        myforEach(function(value){
+            console.log(value+"^^^^^ ");
+        })  
+
+        // 이름있는 함수만들고 전달
+        function aa(value){
+            console.log(value +"~~~~~~~~~");
+        }
+        myforEach(aa);
+
+        myforEach(function(aaaa){
+            alert(aa);
+        }) 
+    </script>
+</body>
+</html>

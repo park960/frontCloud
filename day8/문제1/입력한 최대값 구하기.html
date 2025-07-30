@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h2>3개에 숫자를 입력해 주세요</h2><br>
+  <label for="fir">입력해주세요</label>
+  <input type="number" id="fir">
+
+  <label for="sec">입력해주세요</label>
+  <input type="number" id="sec">
+
+  <label for=" the">입력해주세요</label>
+  <input type="number" id="the">
+
+  <button onclick="choose()">큰 수 출력하기</button>
+
+  <div id="big"></div>
+
+  <script>
+    function choose() {
+      let fir = document.getElementById("fir");
+      let firValue = fir.value;
+      let a = Number(firValue);
+
+      let sec = document.getElementById("sec");
+      let secValue = sec.value;
+      let b = Number(secValue)
+
+      let the = document.getElementById("the");
+      let theValue = the.value;
+      let c = Number(theValue)
+
+      let max = a;
+      if (b > max) {
+        max = b;
+      }
+      if (c > max) {
+        max = c;
+      }
+
+      let big = document.getElementById("big");
+      big.innerHTML = max;
+
+
+
+    }
+
+/*
+
+let   a=10, b=7, c=15;
+
+
+if( a>b){
+     if( a >c){
+                  console.log(a);
+     }else{
+                   console.log(c);
+     }
+
+}else{
+
+     if( b  > c){
+                console.log( b);
+      }else{
+                console.log(c); 
+      }
+}
+
+*/
+
+  </script>
+</body>
+
+</html>

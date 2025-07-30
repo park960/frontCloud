@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="three">3의 배수</label>
+    <div id="check1"></div><br>
+
+    <label for="five">5의 배수</label>
+    <div id="check2"></div><br>
+
+    <label for="fifteen">15의 배수</label>
+    <div id="check3"></div> <br>
+    
+     <label for="etc">이외에 수</label>
+    <div id="check4"></div>
+    <script>    
+
+        let message1="";
+        for(let i=1; i<=100; i++)
+        if(i%3===0){
+            message1 += i + " ";
+
+        document.getElementById("check1").innerHTML = message1;
+        }
+
+        let message2="";
+        for(let i=1; i<=100; i++)
+        if(i%5===0){
+            message2 += i + " ";
+
+        document.getElementById("check2").innerHTML = message2;
+        
+        }
+
+        let message3="";
+        for(let i=1; i<=100; i++)
+        if(i%3===0 && i%5===0){
+            message3 += i + " ";
+
+        document.getElementById("check3").innerHTML = message3;
+        }
+         let message4="";
+        for(let i=1; i<=100; i++)
+        if(i%3!==0 && i%5!==0){
+            message4 += i + " ";
+
+        document.getElementById("check4").innerHTML = message4;
+            
+        
+        
+        
+        }
+    </script>
+
+</body>
+</html>

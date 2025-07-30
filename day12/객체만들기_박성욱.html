@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pasta = {
+            name: "쉬림프 알리오올리로",
+            price: "15000원",
+            ingredients: ["oil", "garlic", "pasta noodles", "shrimp"],
+            progress: {
+                chapter1: "면 7분 삶기",
+                chapter2: "오일에 다진마늘 익히기",
+                chapter3: "새우넣고 익히기",
+                chapter4: "삶은 면 넣고 익히기",
+                chapter5: "면수 넣고 마무리"
+            },
+            cook: function () {
+                for (let i = 1; i <= 5; i++) {
+                    alert(this.progress["chapter" + i]);
+                }
+            }
+        };
+        
+        pasta.cook();
+    </script>
+
+    </script>
+</body>
+
+</html>

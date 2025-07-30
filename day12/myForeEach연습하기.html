@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myForEach(callback){
+        let menu=["파스타","리조또","스테이크","라구"]
+
+        for(let i=0; i < menu.length; i++){
+            let item = menu[i];
+            
+            callback(item);
+        }
+    }
+
+    //익명
+    // myForEach(function(value){
+    //     alert(value);
+    // });
+
+    // //기명
+    function hi(value){
+        console.log(value);
+    }
+    myForEach(hi);// 기명일땐함수를 불야함
+        // myForEach(function(value){
+        //     console.log(value);
+        // });
+    </script>
+</body>
+</html>

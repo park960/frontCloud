@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="score">점수를 입력하세요</label><br>
+    <input type="text" id="score">
+
+    <button onclick="check()">확인하기</button>
+    <div id="info"></div>
+    <script>
+        function check(){
+
+            let message="";
+
+            let input=score.value;
+            let num = parseInt(input);
+            
+
+    //          if (isNaN(num)) {
+    //     message = "숫자를 입력해주세요.";
+    //   } else if (num < 0 || num > 100) {   // ai 개새..
+    //     message = "점수는 0에서 100 사이로 입력해주세요.";
+
+            if(num>=90){
+                message="당신은 A등급입니다";
+            }else if(num>=80){
+                message="당신은 B등급입니다";
+            }else if(num>=70){
+                message="당신은 C등급입니다";
+            }else if(num>=60){
+                message="당신은 D등급입니다";
+            }else if(num<=60){
+                message="당신은 E등급입니다";
+            }
+
+            document.getElementById("info").innerHTML=message;
+
+        }
+
+    </script>
+</body>
+</html>

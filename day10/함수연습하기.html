@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="name">숫자를 입력해주세요</label>
+    <input type="text" id="number">
+    <button onclick="odd()">확인하기</button>
+    <div id="resultArea"></div>
+    <script>
+
+        // 문제01 
+
+        // 이름 : 홀수 판단
+        // 인입 : 숫자
+        // 처리 : 1숫자 인입하여 홀수 판별
+        
+        function odd() {
+            let input = document.getElementById("number").value;
+            let num = parseInt(input);
+
+            let result = "";
+
+            if(isNaN(num)){
+                result="숫자 입력해주세요"
+            }else if(num%2==1){
+                result= num+"는 홀수입니다."
+            }else{
+                result=num+"는 짝수입니다."
+            }
+            document.getElementById("resultArea").innerText=result;
+        }
+
+        //문제02
+
+        //이름 : 성인 판단
+        //인입 : 나이(age)
+        //처리 : 20 기준으로 문글설정 
+        
+        function 인증(input){
+            
+            let result;
+            if(input>=20){
+                
+            }
+        }
+    </script>
+</body>
+
+</html>

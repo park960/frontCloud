@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">이름</label>
+    <input type="text" id="name">
+
+    <label for="age">나이</label>
+    <input type="number" id="age">
+
+    <label for="phone">연락처</label>
+    <input type="number" id="phone">
+
+    <button onclick="info()">정보 출력하기</button>
+
+    <div class="total" id="info_total"></div>
+    
+    <script>
+        function info(){
+
+        let name = document.getElementById("name");
+        let nameValue= name.value;
+        alert(nameValue);
+
+        let age = document.getElementById("age");
+        let ageValue= age.value;
+        alert(ageValue);
+
+        let phone = document.getElementById("phone");
+        let phoneValue= phone.value;
+        alert(phoneValue);
+
+    
+        let info_total = document.getElementById("info_total");
+        info_total.innerHTML="이름 : "+nameValue + "<br>"+ 
+                            "나이 : " + ageValue +"<br>" +  
+                          "연락처 :" + phoneValue ;
+         }
+         </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">이름</label>
+    <input type="text" id="name">
+
+    <label for="age">나이</label>
+    <input type="text" id="age">
+
+    <label for="number">전화번호</label>
+    <input type="text" id="number">
+
+    <button onclick="check()">클릭하기</button>
+
+    <div id="info"> </div>
+
+    <script>
+        function check(){
+        let name = document.getElementById("name");
+        let nameValue = name.value;
+        alert(nameValue);
+
+        let age = document.getElementById("age");
+        let ageValue = age.value;
+        alert(ageValue);
+
+        let number = document.getElementById("number");
+        let numberValue = number.value;
+        alert(numberValue);
+        
+        let info = document.getElementById("info");
+        info.innerHTML="나의 이름은"+nameValue+"입니다." 
+        "나의 나이는"+ageValue+"입니다."
+        "나의 번호는"+numberValue+"입니다.";
+
+        }    
+
+    </script>
+</body>
+</html>

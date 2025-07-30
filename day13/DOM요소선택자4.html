@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(){
+            const items = document.querySelectorAll(".item");
+            // for(let i=0;i < items.length; i++){
+            //     const item = item[i];
+            //     item.style.backgroundColor="blue";
+            // }
+            const item1 =items[0];
+            item1.style.backgoundColor="blue";
+            const item2 =items[1];
+            item2.style.backgoundColor="blue";
+        }
+
+         function unchange(){
+            
+        }
+    </script>
+</head>
+<body>
+    
+    <h2>querySelectorAll로 요소 선택하기</h2>
+    <p>주의사항: 모두선택하기 이므로 선택한 대상이 한 개여도 배열로 반환됨</p>
+    <div class="item"></div>
+    <div class="item"></div>
+
+
+    <button onclick="change()">실행하기</button>
+    <button onclick="unchange()">취소하가</button>
+
+
+</body>
+</html>

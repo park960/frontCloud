@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>간단 게시판</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 30px auto; }
+    input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
+    button { padding: 10px 20px; }
+    li { margin-bottom: 12px; border-bottom: 1px solid #ccc; padding: 6px 0; }
+  </style>
+</head>
+<body>
+
+  <h2>📝 간단 게시판</h2>
+
+  <input type="text" id="title" placeholder="제목을 입력하세요">
+  <textarea id="content" rows="4" placeholder="내용을 입력하세요"></textarea>
+  <button onclick="addPost()">등록</button>
+
+  <h3>📋 게시글 목록</h3>
+  <ul id="postList"></ul>
+
+  <script>
+    // 페이지가 열릴 때 저장된 글 불러오기
+    window.onload = loadPosts;
+
+    function loadPosts() {
+      const posts = JSON.parse(localStorage.getItem("posts")) || [];
+      const list = document.getElementById("postList");
+      list.innerHTML = ""; // 초기화
+
+      posts.forEach((post, idx) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${post.title}</strong><br>${post.content}`;
+        list.appendChild(li);
+      });
+    }
+
+    function addPost() {
+      const title = document.getElementById("title").value.trim();
+      const content = document.getElementById("content").value.trim();
+
+      if (!title || !content) {
+        alert("제목과 내용을 모두 입력해주세요.");
+        return;
+      }
+
+      const newPost = { title, content };
+
+      const existing = JSON.parse(localStorage.getItem("posts")) || [];
+      existing.push(newPost);
+      localStorage.setItem("posts", JSON.stringify(existing));
+
+      document.getElementById("title").value = "";
+      document.getElementById("content").value = "";
+
+      loadPosts(); // 목록 다시 불러오기
+    }
+  </script>
+
+</body>
+</html>

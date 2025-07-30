@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="add">숫자를 입력하세요</label><br>
+    <input type="text" id="add1"><br>
+    <input type="text" id="add2"><br>
+
+    <button onclick="check()">확인하기</button>
+    <div id="info"></div>
+
+    <script>
+        function check() {
+            let input1 = document.getElementById("add1");
+            let numberValue1 = input1.value;
+            let num1 = parseInt(numberValue1);
+
+            let input2 = document.getElementById("add2");
+            let numberValue2 = input2.value;
+            let num2 = parseInt(numberValue2);
+
+           
+            
+            let message = "두 수의 합은 " + (num1 + num2) + "입니다";
+
+
+            document.getElementById("info").innerHTML=message;
+        }    
+    </script>
+</body>
+
+</html>

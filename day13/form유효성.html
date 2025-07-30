@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function vaildLogin(){
+            // alert("sdf");
+            //폼객체 접근하기  => document.forms[0]
+            //              => 
+             
+            const form = document.frm;
+            const userId = form.userId;
+            const userPw = form.userpw;
+
+            console.log(userPw);
+            console.log(userId);
+
+            if (userId.value===""){
+                alert("ID를 입력하새요");
+                userId.focus();
+            }else if (userPw.value===""){
+                alert("PW를 입력하세요");
+                userPw.focus();
+            }else{
+                //정상로그인
+                alert("로그인 성공");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h2>로그인 유효성 검증</h2>
+    <form name="frm" action="" method="get">
+        <input type="text" name="userId">
+        <input type="password" name="userPw">
+        <button type="button" onclick="vaildLogin()">로그인</button ><!--  액션에 지정한 곳으로 보내는 버튼 -->
+        
+    
+    </form>
+</body>
+
+</html>

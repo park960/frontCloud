@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 기능 : 입력한 숫자가 홀수인지 아닌지 판단
+        // 입력 : 숫자
+        // 반환 : 홀수(true),짝수(false)
+        // true, false=> boolean
+        function odd(cnt){
+            
+            let result; 
+            if(cnt%2==1){
+                result=true;
+                //console.log("true");
+            }else{
+                result=false;
+                //console.log("false");
+            }
+      
+            return result ;
+        }
+
+                   
+        
+        let result = odd(16);
+        console.log(result);
+       //홀수이면 
+       if(result==true){
+        alert("홀수번 차량 운행 불가");
+       }
+        //odd();
+
+    </script>
+    
+</body>
+</html>

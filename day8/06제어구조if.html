@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1)
+        if (조건){
+        }        
+        */
+
+        let point=3000;
+        if (point>=2000){
+            console.log("포인트 사용가능")
+        }
+
+        /*
+
+        2)
+        if(조건){
+            //조건이 만족할 떄 수행하는 코드
+        }else{
+            //위의 조건이 아닌 모든 경우에 수행함
+        }
+         */
+
+        if(point >=2000){
+        console.log("포인트 사용가는합니다");
+        }else{
+        console.log("포인트 사용 불가합니다. 2000이상이어야 해요")
+        }
+        
+        /*
+        if(조건){
+        
+        }else if (조건){ 위의 조건이 아닌경우 다른 조건을 물어볼때 사용}
+        }else if(조건){
+        }
+        
+        */
+       let koreaScore=85;
+       if(koreaScore >=90){
+        console.log("A학점");   
+        }else if( koreaScore>=80){
+            console.log("B학점");
+        }else if( koreaScore>+70){
+            console.log("C학점");
+        }
+       
+        //if 문에서 만족울 하는부분이 생기면 바로 종료됨
+    
+        //주의사항 !!!!
+        /* if(조건){수행할 코드}
+        if(조건){수행할 코드}
+        if(조건){수행할 코드}
+        */
+        
+        let scoreMAth =90;
+        if(scoreMAth >=90){
+            console.log("A");
+        }
+        
+        if(scoreMAth >=80){
+            console.log("B");
+        }
+
+        if(scoreMAth >=70){
+            console.log("C");
+        }
+    </script>
+</body>
+</html>

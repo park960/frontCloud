@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원/비회원 탭</title>
+
+    <style>
+        .wrap {
+            width: 400px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .tab-menu {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-menu div {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+        }
+
+        .member, .noMember {
+            display: none;
+            padding: 10px;
+            border: 1px solid #aaa;
+        }
+    </style>
+
+    <script>
+        function showMember() {
+            const member = document.querySelector(".member");
+            const noMember = document.querySelector(".noMember");
+            member.style.display = "block";
+            noMember.style.display = "none";
+        }
+
+        function showNoMember() {
+            const member = document.querySelector(".member");
+            const noMember = document.querySelector(".noMember");
+            member.style.display = "none";
+            noMember.style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 탭 메뉴 -->
+        <div class="tab-menu">
+            <div onclick="showMember()">회원</div>
+            <div onclick="showNoMember()">비회원</div>
+        </div>
+
+        <!-- 회원 로그인 영역 -->
+        <div class="member" style="">
+            ✅ 회원 로그인 화면입니다.
+        </div>
+
+        <!-- 비회원 로그인 영역 -->
+        <div class="noMember">
+            ✅ 비회원 로그인 화면입니다.
+        </div>
+    </div>
+</body>
+
+</html>

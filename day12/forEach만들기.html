@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>콜백 함수 활용 예제</title>
+</head>
+<body>
+
+  <script>
+    // 🧠 콜백 안에서 사용할 함수
+    function 인사말(name) {
+      console.log(name + "님, 좋은 하루 되세요!");
+    }
+
+    // 🛠 콜백을 받아서 사람마다 실행하는 함수
+    function 친구소개(callback) {
+      let 친구들 = ["민수", "지혜", "용식", "수빈", "호영","qkrtjddnr"];
+
+      for (let i = 0; i < 친구들.length; i++) {
+        let 이름 = 친구들[i];
+        callback(이름); // 콜백 호출!
+      }
+    }
+
+    // 🎯 콜백 함수 정의 (익명 함수)
+    친구소개(function(name) {
+      console.log("👋 이름:", name);
+
+      if (name.length === 2) {
+        console.log("👉 두 글자 이름이네요!");
+      } else {
+        console.log("👉 이름이 조금 길어요.");
+      }
+
+      인사말(name); // 외부 함수 호출도 가능
+      console.log("----------");
+    });
+  </script>
+
+</body>
+</html>

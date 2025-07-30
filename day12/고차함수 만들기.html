@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function 인사하기1(name){
+            alert("안녕"+name);
+        }
+
+        // 인사하기1("성욱");
+
+        function 인사하기2(name){
+            alert("hello~"+name);
+        }
+
+        // 인사하기2("성욱");
+
+        //고차함수만들기
+        //매개변수로 함수를 받는 함수를 고차함수라고 한다.
+        //(매개변수로 함수를 전달받는 함수이다)
+
+        //기능 : 인사하기
+        //입력(매개변수) : 인사할 포멧형식 콜백(매개변수로 전달되는 함수)
+        function 인사하기H( k , name ){
+            alert(k()+name); //hello // 안녕하세요
+
+        }
+
+        // 이름 있는 함수 
+        // 이름 없는 함수(익명)
+        function formatK(){
+            return "안녕하세요";
+        }
+
+        function formatE(){
+            return "hello";
+        }
+        인사하기H( formatK ,"성욱"); //formatK 는 콜백함수라고 부른다
+        인사하기H( formatE , "성욱");//formarE 는 콜백함수라고 부른다
+
+        //콜백함수 : 함수호출시 전됭되는 함수
+        //          또는 고차함수의 매개변수로 전당되는 함수를 말한다
+    </script>
+</body>
+</html>

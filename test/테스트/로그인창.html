@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* login-wrap */
+        .login-wrap {
+            display: block;
+            width: 400px;
+            height: 580px;
+            margin: 150px auto 56px;
+            border: 1px solid black;
+            border-radius: 14px;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+
+        /* login */
+        .login{
+            
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+            align-items: center;    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .logo{
+            display: block;
+            width: auto;
+            margin: 0 auto;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }   
+
+        .email{
+            width: 340px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            border-radius: 12px;
+            margin-top: 10px;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+        .password{
+            width: 340px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            border-radius: 12px;
+            margin-top: 10px;
+            padding-left: 10px;
+            box-sizing: border-box
+            
+        }    
+        .login-btn{
+            width: 340px;
+            height: 50px;
+            margin-top: 10px;
+            background-color:#ffd400;
+            border-radius: 12px;
+            border: none;
+            font-size: 14px;
+        }
+        .login-btn:hover{
+            background-color:#d3b832;
+        }
+        .login-btn:active{
+            background-color:#b19714;
+        }
+        .search{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 130px;
+            margin-top: 15px;
+        }
+        .id{
+            font-size: 14px;
+            color:#303441;
+            text-decoration: none;
+            
+        }
+        label{
+            color: #303441;
+            font-size: 14px;
+        }
+        .sns-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: -12px;
+            color: #9a9ba7;
+            font-size: 14px;
+        }
+        .sns-btn{
+            display: flex;
+            gap: 20px;
+            justify-content: center; 
+        }
+       .sns-btn div {
+            width: 50px;
+            height: 50px;
+            background-color: #2f2f3f;
+            color: white;
+            border-radius: 50%;
+            display: flex;               
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        .make{
+            height: 50px;
+            display: flex;
+            line-height: 50px;
+            color: #9a9ba7;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            display: flex;               
+            align-items: center;
+            justify-content: center;
+            gap: 130px;
+
+        }
+        .make-id{
+            text-decoration: none;
+            color: #464646;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .make1{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login">
+            <img src="" alt="LOGO" class="logo">
+        </div>
+        <div class="info">
+            <input type="text" placeholder="이메일을 입력해주세요." class="email">
+            <input type="password" placeholder="비밀번호를 입력해주세요." class="password">
+            <button type="submit" class="login-btn"> 로그인</button>
+            <div class="search">
+                <label><input type="checkbox">로그인유지</label>
+                <a href="#" class="id">아이디/비밀번호 찾기</a>
+            </div>
+        </div>
+        <div class="sns">
+            <div class="sns-text">
+                <p>SNS 간편 로그인</p>
+            </div>
+            <div class="sns-btn">
+                <div class="kakao">kakao</div>
+                <div class="naver">naver</div>
+                <div class="google">google</div>
+                <div class="apple">apple</div>
+                <div class="facebook">facebook</div>
+            </div>
+        </div>
+        <div class="make1">
+        <div class="make">
+            <p>아직 크몽회원이 아니신가요?</p>
+            <a href="#" class="make-id">회원가입</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
